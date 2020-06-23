@@ -92,6 +92,80 @@ textarea {
   margin: 0;
 }
 
+/* General Styles */
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  color: #e2e3ed;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  color: #e2e3ed;
+  text-decoration: none;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.625em;
+  line-height: 1.5em;
+  
+
+}
+
+h3,
+h4 {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5em;
+  
+}
+
+h3 {
+  font-size: 1.0625em;
+}
+
+h4 {
+  font-size: 1.3125em;
+}
+
+p {
+  font-size: .875em;
+  line-height: 1.5em;
+}
+
+img {
+
+}
+
+figure {
+
+}
+
+address {
+  font-style: normal;
+}
+
+footer {
+  color: white;
+}
+
+footer a {
+  color: white;
+}
+
+.content-wrapper {
+
+}
+
 /******* BASE HEADER-FOOTER STYLES*******/
 
 header,
