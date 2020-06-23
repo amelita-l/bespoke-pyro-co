@@ -493,7 +493,9 @@ footer .copyright {
 .mission-content {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  flex-flow: row wrap;
+  flex-basis: 50%;
   padding-top: 20px;
 }
 
@@ -528,7 +530,48 @@ footer .copyright {
 
 @media only screen and (min-width: 1200px){
   /*Desktop styles here*/
+
+  /* General Styles */
+
+  .content-wrapper {
+    max-width: 940px;
+    margin: 100px 0;
+  }
+
+  /* Features */
+
+  .features article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    flex-basis: 33%;
+  }
+
+/****** FAQ ******/
+
+.faq .content-wrapper {
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+.faq-content {
+  flex-basis: 45%;
 }
+
+.faq h1 {
+  width: 100%;
+}
+
+.faq h2 {
+  width: 100%;
+}
+
+
+}
+
+
+
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
