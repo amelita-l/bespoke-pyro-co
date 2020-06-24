@@ -118,7 +118,6 @@ h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.625em;
   line-height: 1.5em;
-  
 
 }
 
@@ -181,6 +180,7 @@ footer {
 
 header {
   padding: 15px 0px;
+  background-color: #202322;
 }
 
 header .content-wrapper {
@@ -189,12 +189,17 @@ header .content-wrapper {
   align-items: center;
   flex-flow: row wrap;
   margin: 0;
+  padding: 15px 0 9px 0;
 }
 
-.header-divider {
-  width: 100%;
+header img {
+  height: 40px;
+}
+
+header .header-divider {
   height: 1px;
   margin: 10px 0 20px 0;
+  color: #3a3a3a;
 }
 
 header nav {
@@ -203,13 +208,16 @@ header nav {
   align-items: center;
   flex-flow: row wrap;
   width: 60%;
-
+  text-transform: uppercase;
+  font-weight: bold;
+  
 }
 
 header nav ul {
   display: flex;
   justify-content: space-around;
   width: 100%;
+  padding: 0;
 }
 
 footer {
@@ -251,6 +259,7 @@ h3,
 h4,
 p {
   margin: 0px;
+  font-weight: normal;
 }
 
 /******* Mobile Styles - Homepage *******/
@@ -261,6 +270,16 @@ p {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url('../img/jake-melara-30679-unsplash.jpg') no-repeat #16231e;
+  height: 500px;
+  background-size: 320%;
+  background-position: center;
+  
+}
+
+.hero-area h1 {
+  padding-top: 54px;
+  margin-bottom: 335px;
 }
 
 /*Aside*/
@@ -270,6 +289,12 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background: #527158;
+  padding: 30px 0 55px 0;
+}
+
+aside h3 {
+  padding-bottom: 10px;
 }
 
 /*Features*/
@@ -278,6 +303,10 @@ aside {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url('../img/rawpixel-800820-unsplash1.jpg') no-repeat #202322;
+  background-position: center;
+  background-size: cover;
+  padding: 50px 0 65px 0;
 }
 
 .features h2 {
@@ -285,8 +314,9 @@ aside {
 }
 
 .features article {
-  width: 63%;
+  width: 60%;
   margin: 30px 0px;
+  
 }
 
 .features .features-items {
@@ -298,6 +328,7 @@ aside {
 
 .features p {
   margin: 0;
+  text-align: center;
 }
 
 /*Reviews*/
@@ -373,6 +404,32 @@ figure {
   margin-bottom: 50px;
 }
 
+aside .form {
+  margin-top: 30px;
+}
+ 
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #9d9ea4;
+  font-style: italic;
+  padding: 1em;
+  font-family: 'Open Sans', sans-serif;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
 
 
 
@@ -482,7 +539,6 @@ figure {
   }
 
   header .content-wrapper {
-    width: 100%;
     justify-content: space-between;
   }
 
@@ -559,7 +615,6 @@ footer .contact {
 }
 
 footer .copyright {
-  width: 100%;
 }
 
 /****** ABOUT PAGE ******/
