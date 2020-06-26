@@ -283,11 +283,9 @@ p {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  background: url('../img/jake-melara-30679-unsplash.jpg') no-repeat #16231e;
+  background: url('../img/jake-melara-30679-unsplash.jpg') center no-repeat #16231e;
   height: 500px;
-  background-size: 320%;
-  background-position: 50% 45%;
-  
+  background-size: cover;  
 }
 
 .hero-area h1 {
