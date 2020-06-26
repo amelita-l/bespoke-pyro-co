@@ -114,6 +114,10 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  font-family: 'Poppins', sans-serif;
+}
+
 h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.625em;
@@ -196,10 +200,10 @@ header img {
   height: 40px;
 }
 
-header .header-divider {
-  height: 1px;
+hr.header-divider {
   margin: 10px 0 20px 0;
-  color: #3a3a3a;
+  width: 100%;
+  border-top: 1px solid #3a3a3a;
 }
 
 header nav {
@@ -218,14 +222,23 @@ header nav ul {
   justify-content: space-around;
   width: 100%;
   padding: 0;
+  margin: 0;
 }
 
 footer {
-  flex-direction: column;
+  background: #202322;
+  display: flex;
+  justify-content: center;
 }
 
 footer p {
   margin: 0;
+  text-align: center;
+}
+
+footer h4 {
+  text-align: center;
+  padding-bottom: 22px;
 }
 
 footer .content-wrapper {
@@ -250,7 +263,7 @@ footer .social-icons p {
 }
 
 footer .copyright {
-  margin: 20px 0px;
+  padding: 50px 0 0 0;
 }
 
 h1,
@@ -273,13 +286,15 @@ p {
   background: url('../img/jake-melara-30679-unsplash.jpg') no-repeat #16231e;
   height: 500px;
   background-size: 320%;
-  background-position: center;
+  background-position: 50% 45%;
   
 }
 
 .hero-area h1 {
-  padding-top: 54px;
-  margin-bottom: 335px;
+  padding-top: 50px;
+  padding-bottom: 335px;
+  width: 60%;
+  font-family: 'Poppins', sans-serif;
 }
 
 /*Aside*/
@@ -337,6 +352,8 @@ aside h3 {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: #2a423a;
+  padding: 55px 0 45px 0;
 }
 
 .reviews h2 {
@@ -346,6 +363,10 @@ aside h3 {
 .reviews h3 {
   width: 55%;
   margin: 20px 0px;
+}
+
+.reviews img {
+  width: 100%;
 }
 
 /******* Mobile Styles - About Page ******/
@@ -528,15 +549,16 @@ input[type=button] {
   /*General styles*/
   .content-wrapper {
     max-width: 640px;
-    margin: 100px 0;
   }
 
   /*header*/
 
   header {
-    justify-content: space-between;
+    justify-content: center;
     padding: 33px 0;
+    width: 100%;
   }
+
 
   header .content-wrapper {
     justify-content: space-between;
@@ -556,6 +578,16 @@ input[type=button] {
 
   /* Hero Area */
 
+  .hero-area h1{
+    font-size: 2.0625em;
+    width: 60%;
+  }
+
+  .hero-area {
+    background-size: 150%;
+    height: 600px;
+  }
+
   /* Aside */
 
   aside .content-wrapper {
@@ -568,34 +600,61 @@ input[type=button] {
 
   aside .content-wrapper .form-description,
   aside .content-wrapper .form {
-    width: 40%;
+    width: 43%;
     margin: 0;
+  }
+
+  aside h3 {
+    font-size: 1.125em;
+  }
+
+  aside p {
+    font-size: 1.001em;
   }
 
  /* Features */
 
   .features article {
     display: flex;
+    align-items: flex-start;
     justify-content: center;
-    align-items: center;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     flex-basis: 50%;
   }
 
   .features .features-item-description {
-    width: 50%;
+    width: 60%;
+  }
+
+  .features h2 {
+    font-size: 1.5625em;
   }
 
   /* Reviews */
-
-  .reviews article {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-.reviews article div {
-  width: 49%;
+.review-text {
+  display: flex;
+  flex-flow:row wrap;
+  justify-content: space-between;
 }
+
+.reviews h2 {
+  margin-bottom: 40px;
+}
+
+.reviews h3 {
+  width: 45%;
+  margin: 0 12px;
+}
+
+.reviews p {
+  width: 45%;
+}
+
+.reviews img {
+  width: 50%;
+}
+
+
 
 /* Footer */
 
@@ -607,7 +666,12 @@ footer .content-wrapper {
 .footer-content {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+}
+
+footer .social {
+  padding: 0;
+  margin: 0;
 }
 
 footer .contact {
@@ -615,6 +679,8 @@ footer .contact {
 }
 
 footer .copyright {
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 /****** ABOUT PAGE ******/
@@ -667,7 +733,64 @@ footer .copyright {
     margin: 100px 0;
   }
 
+  /* Header */
+
+
+  /* Hero Area */
+  .hero-area .content-wrapper {
+    margin: 50px 0;
+  }
+
+  .hero-area {
+    height: 600px;
+    background-size: 100%;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .hero-area h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 2.625em;
+  }
+
+  /* Aside */
+
+  aside {
+    padding-left: 85px;
+  }
+  aside .form-description {
+    flex-basis: 40%;
+  }
+
+  aside h3 {
+    font-size: 2em;
+  }
+
+  aside p {
+    font-size: 1.1em;
+  }
+
+  aside .form {
+    flex-basis: 40%;
+  }
+
+  input[type=button] {
+  font-size: 1.5em;
+  }
   /* Features */
+  .features {
+    padding: 0;
+  }
+
+  .features h2 {
+    font-size: 2.2em;
+  }
+
+  .features p {
+    font-size: 1.1em;
+  }
 
   .features article {
     display: flex;
@@ -675,6 +798,29 @@ footer .copyright {
     align-items: center;
     flex-flow: row wrap;
     flex-basis: 33%;
+  }
+
+  /* Reviews */
+
+  .reviews h2 {
+    font-size: 2.2em;
+  }
+
+  .reviews h3 {
+    font-size: 2em;
+  }
+
+  .reviews p {
+    font-size: 1.1em;
+  }
+
+  /* Footer */
+  footer h4 {
+    font-size: 2em;
+  }
+
+  footer p {
+    font-size: 1.1em;
   }
 
 /****** FAQ ******/
