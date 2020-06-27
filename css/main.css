@@ -326,6 +326,11 @@ aside h3 {
   padding: 50px 0 65px 0;
 }
 
+.features i {
+	font-size: 3.75em;
+        margin-bottom: 40px;
+}
+
 .features h2 {
   margin-bottom: 60px;
 }
@@ -380,6 +385,12 @@ aside h3 {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background: #527158;
+  padding: 45px 0 50px 0;
+}
+
+.mission p {
+  padding: 20px 0 0px 0;
 }
 
 /*Map*/
@@ -390,6 +401,7 @@ height: 0;
 padding-bottom: 125%;
 overflow: hidden;
 position: relative;
+
 }
 
 .map iframe {
@@ -407,10 +419,22 @@ position: relative;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background: #2a423a;
+  padding: 50px 0 34px 0;
 }
 
 .contact-content p {
   margin: 0;
+  padding-bottom: 21px;
+}
+
+.contact-section h2 {
+  padding-bottom: 12px;
+
+}
+
+.contact-content h4 {
+  padding-bottom: 10px;
 }
 
 
@@ -421,18 +445,27 @@ position: relative;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    background: #527158;
 }
 
 .faq .content-wrapper {
-    margin: 50px 0 0 0;
+    margin: 48px 0 0 0;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
 }
 
+.faq h1 {
+  padding-bottom: 45px;
+}
+
 .faq h2 {
   margin-bottom: 40px;
+}
+
+.faq h4 {
+  padding-bottom: 15px;
 }
 
 .faq-content {
@@ -712,8 +745,25 @@ footer .copyright {
   padding-top: 20px;
 }
 
+.mission h2 {
+  font-size: 2.1em;
+}
+
 .mission-content p{
   width: 45%;
+  padding: 38px 0 95px 0;
+}
+
+.contact-section {
+  padding: 96px 0 100px 0;
+}
+.contact-section h2 {
+  padding-bottom: 56px;
+  font-size: 2em;
+}
+
+.contact-content h4 {
+  font-size: 1.5em;
 }
 
 .contact-section .content-wrapper h2 {
@@ -734,14 +784,23 @@ padding-bottom: 45.6%;
 
 .faq .content-wrapper {
     justify-content: space-between;
+    margin: 100px 0;
   }
+
+.faq h1 {
+  font-size: 2.1em;
+}
 
 .faq-content {
   flex-basis: 45%;
 }
 
-.faq h2 {
-  width: 100%;
+.faq h4 {
+  font-size: 1em;
+}
+
+.faq p {
+  font-size: .8em;
 }
 }
 
@@ -854,6 +913,33 @@ padding-bottom: 45.6%;
 padding-bottom: 37.5%;
 }
 
+.mission .content-wrapper {
+  margin: 0;
+}
+.mission h2 {
+  font-size: 2.1875em;
+}
+
+.mission-content {
+  padding: 93px 0 97px 0;
+}
+
+.mission p {
+  padding-bottom: 0px;
+}
+
+.mission {
+  padding: 0;
+}
+
+.contact-section {
+  padding: 100px 0;
+}
+
+.contact-section .content-wrapper {
+  margin: 0;
+}
+
 /****** FAQ ******/
 
 .faq .content-wrapper {
@@ -869,11 +955,13 @@ padding-bottom: 37.5%;
   width: 100%;
 }
 
-.faq h2 {
-  width: 100%;
+.faq h4 {
+  font-size: 1.2em;
 }
 
-
+.faq p {
+  font-size: 1em;
+}
 }
 
 
