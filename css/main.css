@@ -260,6 +260,11 @@ footer .social-icons {
   align-items: center;
 }
 
+footer .social-icons i {
+  color: white;
+  font-size: 3em;
+}
+
 footer .social-icons p {
   display: flex;
   justify-content: center;
@@ -714,15 +719,27 @@ footer .content-wrapper {
   margin: 100px 0;
 }
 
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
 }
+
+ footer p {
+      line-height: 1.285;
+  }
+
+footer .social-icons {
+    width: 12.5em;
+    justify-content: space-between;
+  }
+
 
 footer .social {
   padding: 0;
   margin: 0;
+  justify-content: space-between;
 }
 
 footer .contact {
@@ -732,7 +749,14 @@ footer .contact {
 footer .copyright {
   margin-bottom: 0;
   padding-bottom: 0;
+  width: 100%;
 }
+
+  footer h4 {
+    font-size: 1.5em;
+  }
+
+
 
 /****** ABOUT PAGE ******/
 
